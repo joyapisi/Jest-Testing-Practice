@@ -1,6 +1,13 @@
-// import capitalizeString from './modules/capitalizeString.js';
+// const { capitalizeString } = require('./modules/capitalizeString.js');
 
-const { capitalizeString } = require('./modules/capitalizeString.js');
+function capitalizeString(str) {
+  if (str.length === 0) {
+    return str;
+  }
+  const firstChar = str.charAt(0).toUpperCase();
+  const restOfStr = str.slice(1);
+  return firstChar + restOfStr;
+}
 
 describe('capitalizeString, function', () => {
   test('capitalizes first letter of string', () => {

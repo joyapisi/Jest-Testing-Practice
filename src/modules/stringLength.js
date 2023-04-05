@@ -9,4 +9,6 @@ function stringLength(string) {
   const myString = string.length;
   return myString;
 }
-return stringLength('');
+export { stringLength as default };
+
+// return stringLength('');

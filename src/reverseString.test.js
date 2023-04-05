@@ -1,4 +1,8 @@
-import reverseString from './modules/reverseString.js';
+// import reverseString from './modules/reverseString.js';
+function reverseString(string) {
+  const myString = string.split('').reverse().join('');
+  return myString;
+}
 
 describe('reverseString function', () => {
   test('reverses a string', () => {
