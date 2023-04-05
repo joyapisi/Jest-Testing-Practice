@@ -5,10 +5,8 @@ function stringLength(string) {
   if (string.length > 10) {
     throw new Error('String cannot be longer than 10 characters');
   }
-  return string.length;
+
+  const myString = string.length;
+  return myString;
 }
-
-const myString = '';
-const myStringLength = stringLength(myString);
-
-return myStringLength;
+return stringLength('');
