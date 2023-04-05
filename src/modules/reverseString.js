@@ -3,4 +3,6 @@ function reverseString(string) {
   return myString;
 }
 
-return reverseString();
+export { reverseString as default };
+
+reverseString();
